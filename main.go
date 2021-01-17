@@ -1,8 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"net/http"
+)
+
+// hello writes a response for the /hello path
+func hello(w http.ResponseWriter, req *http.Request) {
+	_, _ = fmt.Fprintf(w, "Hi there!\n")
+}
 
 func main() {
+	// Handle /hello
+	http.HandleFunc("/hello", hello)
 
-    fmt.Println("Hello, Go")
+	// Start the server
+	_ = http.ListenAndServe(":8080", nil)
 }
