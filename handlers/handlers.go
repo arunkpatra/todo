@@ -6,7 +6,7 @@ import (
 )
 
 // HealthHandler handles the /health route. It returns an application status in JSOn format.
-func HealthHandler( w http.ResponseWriter, r *http.Request) {
+func HealthHandler(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 	w.Header().Set("Content-Type", "application/json")
 
