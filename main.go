@@ -1,18 +1,14 @@
 package main
 
 import (
-	"fmt"
+	"github.com/arunkpatra/todo/handlers"
 	"net/http"
 )
 
-// hello writes a response for the /hello path
-func hello(w http.ResponseWriter, req *http.Request) {
-	_, _ = fmt.Fprintf(w, "Hi there!\n")
-}
-
 func main() {
-	// Handle /hello
-	http.HandleFunc("/hello", hello)
+	// Handle requests
+	http.HandleFunc("/hello", handlers.HelloHandler)
+	http.HandleFunc("/health", handlers.HealthHandler)
 
 	// Start the server
 	_ = http.ListenAndServe(":8080", nil)
