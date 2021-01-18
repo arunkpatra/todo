@@ -9,4 +9,5 @@ A simple todo repository
 ![GitHub top language](https://img.shields.io/github/languages/top/arunkpatra/todo?style=flat-square)
 ![GitHub language count](https://img.shields.io/github/languages/count/arunkpatra/todo?style=flat-square)
 [![Release](https://img.shields.io/github/release/arunkpatra/todo.svg?style=flat-square)](https://github.com/arunkpatra/todo/releases/latest)
+[![Twitter](https://img.shields.io/badge/twitter-@arunkpatra-blue.svg?style=flat&colorB=64A5DE&label=twitter)](https://twitter.com/arunkpatra)
 
