@@ -14,7 +14,7 @@ func SetupDatabase() (*sql.DB, error) {
 	if err != nil {
 		panic(err.Error()) // Just for example purpose. You should use proper error handling instead of panic
 	}
-	defer db.Close()
+	//defer db.Close()
 
 	// Open doesn't open a connection. Validate DSN data:
 	err = db.Ping()
